@@ -4,6 +4,8 @@ import Form from 'react-bootstrap/Form';
 import { Container } from 'react-bootstrap';
 import React, {useState} from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css'
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
 
 function App() {
   const [formulario, setFormulario] = useState({
@@ -20,26 +22,40 @@ function App() {
   return (
     <div className="App">
       <Container>
+         <Row>
+        <Col><Form.Check variant="primary" type="Suma" >
+            Suma
+          </Form.Check></Col>
+          <Col><Form.Check variant="primary" type="Suma" >
+            Suma
+          </Form.Check></Col>
+      </Row>
         <Form>
           <Form.Group className="mb-3" controlId="formBasicEmail">
-            <Form.Label>Email address</Form.Label>
-            <Form.Control onChange= {handleChange} name= "email" type="email" placeholder="Enter email" />
+            <Form.Label>Numero 1</Form.Label>
+            <Form.Control onChange= {handleChange} name= "email" type="email" placeholder=" Ingrese Numero" />
             <Form.Text className="text-muted">
-              We'll never share your email with anyone else.
             </Form.Text>
           </Form.Group>
 
           <Form.Group className="mb-3" controlId="formBasicPassword">
-            <Form.Label>Password</Form.Label>
-            <Form.Control onChange= {handleChange} name= "password" type="password" placeholder="Password" />
+            <Form.Label>Numero 2</Form.Label>
+            <Form.Control onChange= {handleChange} name= "password" type="password" placeholder="Ingrese Numero" />
           </Form.Group>
           {formulario.email}
           {formulario.password}
           <Form.Group className="mb-3" controlId="formBasicCheckbox">
             <Form.Check type="checkbox" label="Check me out" />
           </Form.Group>
-          <Button variant="primary" type="submit">
-            Submit
+          
+          <Button variant="primary" type="Resta">
+            Resta
+          </Button>
+          <Button variant="primary" type="Multiplicacion">
+            Multi
+          </Button>
+          <Button variant="primary" type="Division">
+            Division
           </Button>
         </Form>
       </Container>

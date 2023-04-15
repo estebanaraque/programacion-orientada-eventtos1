@@ -23,41 +23,51 @@ function App() {
     <div className="App">
       <Container>
         <Row>
-          <Col> <Button variant="primary" type="Suma">
-            Suma
-          </Button> </Col>
-
-          <Col><Button variant="primary" type="Resta">
-            Resta
-          </Button></Col>
-        </Row>
-        <Row>
-          <Col><Button variant="primary" type="Division">
-            División
-          </Button></Col>
-        </Row>
-        <Form>
-          <Form.Group className="mb-3" controlId="formBasicEmail">
+          <Col> <Form.Group className="mb-3" controlId="formBasicEmail">
             <Form.Label>Numero 1</Form.Label>
             <Form.Control onChange={handleChange} name="email" type="email" placeholder="Numero 1 " />
             <Form.Text className="text-muted">
             </Form.Text>
-          </Form.Group>
+          </Form.Group> </Col>
 
-          <Form.Group className="mb-3" controlId="formBasicPassword">
+          <Col><Form.Group className="mb-3" controlId="formBasicEmail">
+            <Form.Label>Suma</Form.Label>
+            <Form.Control onChange={handleChange} name="email" type="email" placeholder="Suma " />
+            <Form.Text className="text-muted">
+            </Form.Text>
+          </Form.Group></Col>
+        </Row>
+
+        <Row>
+          <Col> <Form.Group className="mb-3" controlId="formBasicEmail">
             <Form.Label>Numero 2</Form.Label>
-            <Form.Control onChange={handleChange} name="password" type="password" placeholder="Numero 2" />
-          </Form.Group>
-          {formulario.email}
-          {formulario.password}
-          <Form.Group className="mb-3" controlId="formBasicCheckbox">
-            <Form.Check type="checkbox" label="Check me out" />
-          </Form.Group>
+            <Form.Control onChange={handleChange} name="email" type="email" placeholder="Numero 2 " />
+            <Form.Text className="text-muted">
+            </Form.Text>
+          </Form.Group> </Col>
 
+          <Col><Form.Group className="mb-3" controlId="formBasicEmail">
+            <Form.Label>Resta</Form.Label>
+            <Form.Control onChange={handleChange} name="email" type="email" placeholder="Resta " />
+            <Form.Text className="text-muted">
+            </Form.Text>
+          </Form.Group>
+          <Form.Group className="mb-3" controlId="formBasicEmail">
+            <Form.Label>Multiplicacion</Form.Label>
+            <Form.Control onChange={handleChange} name="email" type="email" placeholder="Multiplicación " />
+            <Form.Text className="text-muted">
+            </Form.Text>
+          </Form.Group>
+          <Form.Group className="mb-3" controlId="formBasicEmail">
+            <Form.Label>División</Form.Label>
+            <Form.Control onChange={handleChange} name="email" type="email" placeholder="División " />
+            <Form.Text className="text-muted">
+            </Form.Text>
+          </Form.Group></Col>
+        </Row>
 
-          <Button variant="primary" type="Multiplicacion">
-            Multiplicación
-          </Button>
+        <Form>
+        
         </Form>
       </Container>
     </div>

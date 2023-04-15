@@ -23,40 +23,54 @@ function App() {
     <div className="App">
       <Container>
          <Row>
-        <Col><Form.Check variant="primary" type="Suma" >
-            Suma
-          </Form.Check></Col>
-          <Col><Form.Check variant="primary" type="Suma" >
-            Suma
-          </Form.Check></Col>
-      </Row>
-        <Form>
-          <Form.Group className="mb-3" controlId="formBasicEmail">
+
+          <Col><Form.Group className="mb-3" controlId="formBasicEmail">
             <Form.Label>Numero 1</Form.Label>
             <Form.Control onChange= {handleChange} name= "email" type="email" placeholder=" Ingrese Numero" />
             <Form.Text className="text-muted">
             </Form.Text>
-          </Form.Group>
 
-          <Form.Group className="mb-3" controlId="formBasicPassword">
+          <Row><Form.Group className="mb-3" controlId="formBasicPassword">
             <Form.Label>Numero 2</Form.Label>
             <Form.Control onChange= {handleChange} name= "password" type="password" placeholder="Ingrese Numero" />
-          </Form.Group>
-          {formulario.email}
-          {formulario.password}
+          </Form.Group></Row>
+          <Button variant="primary" type="Resultado">
+            Resultado
+          </Button>
           <Form.Group className="mb-3" controlId="formBasicCheckbox">
             <Form.Check type="checkbox" label="Check me out" />
           </Form.Group>
+          </Form.Group></Col>
+
+          <Col><Form.Group className="mb-3" controlId="formBasicEmail">
+            <Form.Label>Suma</Form.Label>
+            <Form.Control onChange= {handleChange} name= "email" type="email" placeholder=" Resultado Suma" />
+            <Form.Text className="text-muted">
+            </Form.Text>
+
+            <Form.Group className="mb-3" controlId="formBasicPassword">
+            <Form.Label>Resta</Form.Label>
+            <Form.Control onChange= {handleChange} name= "password" type="password" placeholder="Resultado Resta" />
+          </Form.Group>
+
+            <Form.Group className="mb-3" controlId="formBasicPassword">
+            <Form.Label>Multiplicacion</Form.Label>
+            <Form.Control onChange= {handleChange} name= "password" type="password" placeholder="Resultado Multiplicacion" />
+          </Form.Group>
+
+            <Form.Group className="mb-3" controlId="formBasicPassword">
+            <Form.Label>Division</Form.Label>
+            <Form.Control onChange= {handleChange} name= "password" type="password" placeholder="Resultado Division" />
+          </Form.Group>
+          </Form.Group></Col>
+         
+          {formulario.email}
+          {formulario.password}
           
-          <Button variant="primary" type="Resta">
-            Resta
-          </Button>
-          <Button variant="primary" type="Multiplicacion">
-            Multi
-          </Button>
-          <Button variant="primary" type="Division">
-            Division
-          </Button>
+          
+          
+        </Row>
+        <Form>
         </Form>
       </Container>
     </div>
